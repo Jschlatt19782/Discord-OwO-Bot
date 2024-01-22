@@ -16,7 +16,7 @@ if (!process.env.BOT_TOKEN) {
 
 // Config file
 const config = require('./src/data/config.json');
-
+const keep_alive = require('./keep_alive.js')
 // Grab tokens and secret files
 const debug = config.debug;
 if (!debug) require('dd-trace').init();
